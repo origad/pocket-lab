@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/titleFragment">
+
+    <fragment
+        android:id="@+id/titleFragment"
+        android:name="com.example.pocketlab.TitleFragment"
+        android:label="Химическая лаборатория"
+        tools:layout="@layout/fragment_title">
+        <action
+            android:id="@+id/action_titleFragment_to_courseTypeFragment"
+            app:destination="@id/courseTypeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/courseTypeFragment"
+        android:name="com.example.pocketlab.CourseTypeFragment"
+        android:label=" "
+        tools:layout="@layout/fragment_course_type">
+        <action
+            android:id="@+id/action_courseTypeFragment_to_inorganicFragment"
+            app:destination="@id/inorganicFragment" />
+        <action
+            android:id="@+id/action_courseTypeFragment_to_organicFragment"
+            app:destination="@id/organicFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/inorganicFragment"
+        android:name="com.example.pocketlab.InorganicFragment"
+        android:label=" "
+        tools:layout="@layout/fragment_inorganic">
+        <action
+            android:id="@+id/action_inorganicFragment_to_labFragment"
+            app:destination="@id/labFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/labFragment"
+        android:name="com.example.pocketlab.LabFragment"
+        android:label=" " >
+    <argument
+        android:name="lab_id"
+        />
+    </fragment>
+    <fragment
+        android:id="@+id/organicFragment"
+        android:name="com.example.pocketlab.OrganicFragment"
+        android:label=" "
+        tools:layout="@layout/fragment_organic">
+        <action
+            android:id="@+id/action_organicFragment_to_labFragment"
+            app:destination="@id/labFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/chemTableFragment"
+        android:name="com.example.pocketlab.ChemTableFragment"
+        android:label="Таблица Менделеева"
+        tools:layout="@layout/fragment_chem_table"/>
+    <fragment
+        android:id="@+id/solubilityTableFragment"
+        android:name="com.example.pocketlab.SolubilityTableFragment"
+        android:label="Таблица растворимости"
+        tools:layout="@layout/fragment_solubility_table"/>
+</navigation>

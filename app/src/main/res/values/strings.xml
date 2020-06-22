@@ -1,3 +1,28 @@
 <resources>
-    <string name="app_name">PocketLab</string>
+    <string name="app_name">Химическая лаборатория</string>
+    <string name="pocket_lab_header">Лабораторные работы</string>
+    <string name="start">Начать</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="select_course">Выберите курс</string>
+    <string name="course_school">Школа</string>
+    <string name="course_college">Колледж</string>
+    <string name="select_course_type">Выберите раздел химии</string>
+    <string name="type_inorganic">Неорганическая</string>
+    <string name="type_organic">Органическая</string>
+    <string name="type_analytical">Аналитическая</string>
+    <string name="inorganic_course_header">Неорганическая химия</string>
+    <string name="first_lab">Лабораторная работа №1</string>
+    <string name="second_lab">Лабораторная работа №2</string>
+    <string name="third_lab">Лабораторная работа №3</string>
+    <string name="inorg_first_lab_desc">Реакции обмена в водных растворах электролитов</string>
+    <string name="inorg_second_lab_desc">Общие свойства кислот, оснований, солей. Гидролиз солей</string>
+    <string name="inorg_third_lab_desc">Общие свойства металлов. Свойства оксидов и гидроксидов</string>
+
+    <string name="organic_course_header">Органическая химия</string>
+    <string name="org_first_lab_desc">Получение этилена и изучение его свойств</string>
+    <string name="org_second_lab_desc">Получение и свойства альдегидов</string>
+    <string name="org_third_lab_desc">Изучение свойств белков</string>
+    <string name="mendeleev_table">Таблица Менделеева</string>
+    <string name="solubility_table">Таблица растворимости</string>
 </resources>
